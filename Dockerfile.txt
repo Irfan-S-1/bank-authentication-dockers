@@ -1,0 +1,5 @@
+FROM continuumio/anaconda3:4.4.0
+COPY . open /var/lib/docker/tmp/buildkit-mount060940482
+EXPOSE 5000
+WORKDIR open /var/lib/docker/tmp/buildkit-mount060940482
+CMD python flassger.py
